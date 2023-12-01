@@ -22,7 +22,9 @@ for (let i = 0; i < svgRef.length; i++) {
 }
 
 // querySelector nth-child
-const penultGhost = document.querySelector("#area-51 > svg:nth-of-type(3)");
+const penultGhost = document.querySelector(
+  "#area-51 > svg:nth-last-of-type(2)"
+);
 penultGhost.classList.add("penultGhost");
 
 // from the last child, select the div immediately above the ghost and make its border '5px dashed'
